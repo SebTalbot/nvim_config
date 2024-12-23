@@ -1,34 +1,34 @@
 local present, lsp_installer = pcall(require, "mason-lspconfig")
 if not present then
-  print("Warning: Cannot find lsp_installer")
-  return
+	print("Warning: Cannot find lsp_installer")
+	return
 end
 
 lsp_installer.setup({
-  automatic_installation = true,
+	automatic_installation = true,
 })
 
 local installer_present, mason_installer = pcall(require, "mason-tool-installer")
 if not installer_present then
-  print("Warning: Cannot find mason-tool-installer")
-  return
+	print("Warning: Cannot find mason-tool-installer")
+	return
 end
 
 mason_installer.setup({
-  ensure_installed = {
-    -- "goimports-reviser",
-    "shopify-cli",
-    "shopify-theme-check",
-    "tree-sitter-cli",
-    "vue-language-server",
-    "yaml-language-server",
-  },
+	ensure_installed = {
+		-- "goimports-reviser",
+		"shopify-cli",
+		"shopify-theme-check",
+		"tree-sitter-cli",
+		"vue-language-server",
+		"yaml-language-server",
+	},
 })
 
 local lspconfig_present, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_present then
-  print("Warning: Cannot find lspconfig")
-  return
+	print("Warning: Cannot find lspconfig")
+	return
 end
 
 local handlers = require("plugins.configs.lsp.handlers")
@@ -52,28 +52,28 @@ lspconfig.yamlls.setup(handlers.inject({}))
 
 -- @TODO Move to setting file
 lspconfig.volar.setup(handlers.inject({
-  init_options = {
-    vue = {
-      hybridMode = false,
-      maxOldSpaceSize = 8096,
-    },
-  },
+	init_options = {
+		vue = {
+			hybridMode = false,
+			maxOldSpaceSize = 8096,
+		},
+	},
 }))
 
 lspconfig.theme_check.setup(handlers.inject({
-  root_dir = function(fname)
-    return vim.loop.cwd()
-  end,
+	root_dir = function(fname)
+		return vim.loop.cwd()
+	end,
 }))
 
 require("plugins.configs.lsp.handlers").setup()
 require("plugins.configs.lsp.null_ls")
 
 function _LspCustomFormat()
-  vim.lsp.buf.format({
-    filter = function(client)
-      -- ignore volar
-      return client.name ~= "volar"
-    end,
-  })
+	vim.lsp.buf.format({
+		filter = function(client)
+			-- ignore volar
+			return client.name ~= "volar"
+		end,
+	})
 end
