@@ -170,10 +170,13 @@ function _TelescopeFileIgnore()
 			-- Directories
 			".git/",
 			"node_modules/",
-			"%/test%/",
-			"%/tests%/",
-			"%.test%.",
-			"%.tests%.",
+
+			-- Tests
+			"%/test%/", -- node
+			"%/tests%/", -- node
+			"%.test%.", -- node
+			"%.tests%.", -- node
+			"_test.go$", -- golang
 
 			-- Non-text Files
 			".jpg$",
@@ -197,10 +200,13 @@ local ignorePatterns = {
 	-- Directories
 	".git/*",
 	"node_modules/*",
-	"*/test/*",
-	"*/tests/*",
-	"*.test.*",
-	"*.tests.*",
+
+	-- Tests
+	"*/test/*", -- node
+	"*/tests/*", -- node
+	"*.test.*", -- node
+	"*.tests.*", -- node
+	"*_test.go", -- golang
 
 	-- Files
 	"package-lock.json",
