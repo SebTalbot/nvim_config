@@ -29,10 +29,13 @@ local plugins = {
 		lazy = false,
 	},
 	{
-		"norcalli/nvim-colorizer.lua",
-		config = function()
-			require("colorizer").setup()
-		end,
+		"catgoose/nvim-colorizer.lua",
+		event = "BufReadPre",
+		opts = {
+			user_default_options = {
+				names = false,
+			},
+		},
 	},
 	{
 		"nvim-lualine/lualine.nvim",
