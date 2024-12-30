@@ -115,6 +115,12 @@ cmp.setup({
 	experimental = {
 		ghost_text = false,
 	},
+	window = {
+		documentation = {
+			max_width = 80,
+			max_height = 0
+		}
+	}
 })
 
 cmp.setup.cmdline({ "/", "?" }, {
