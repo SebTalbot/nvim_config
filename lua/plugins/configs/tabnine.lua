@@ -8,7 +8,7 @@ tabnine.setup({
 	accept_keymap = "<C-t>",
 	dismiss_keymap = "<C-s>",
 	debounce_ms = 300,
-	suggestion_color = { gui = "#f7e163", cterm = 244 },
+	suggestion_color = { gui = "#dbbc7f" },
 	exclude_filetypes = { "TelescopePrompt" },
 	log_file_path = nil,
 })
