@@ -33,6 +33,9 @@ telescope.setup({
 		scroll_strategy = "limit",
 		selection_caret = "",
 		sorting_strategy = "ascending",
+		preview = {
+			filesize_limit = 0.1, -- MB
+		},
 		vimgrep_arguments = {
 			"rg",
 			"--color=never",
