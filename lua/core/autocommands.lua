@@ -1,8 +1,6 @@
 local cmd = vim.cmd
 
--- cmd [[
---   augroup packer_user_config
---     autocmd!
---     autocmd BufWritePost lua/plugins/init.lua source <afile> | PackerSync
---   augroup end
--- ]]
+cmd([[
+	autocmd BufEnter * if &filetype == "" | setlocal ft=config | endif
+	autocmd BufEnter * if &filetype == "conf" | setlocal ft=config | endif
+]])
