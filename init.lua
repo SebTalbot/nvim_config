@@ -23,6 +23,7 @@ local modules = {
 	"core.autocommands",
 	"core.options",
 	"core.mappings",
+	"core.functions",
 }
 
 for _, module in ipairs(modules) do

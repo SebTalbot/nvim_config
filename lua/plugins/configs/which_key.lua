@@ -32,6 +32,7 @@ local nmappings = {
 		["*"] = "Select word under cursor",
 		["/"] = "Hide word selection",
 		["?"] = "Neovim help search",
+		["c"] = "Toggle Column Highlight",
 		a = {
 			name = "Applications",
 			h = "Check Health",

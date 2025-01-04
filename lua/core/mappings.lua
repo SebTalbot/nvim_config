@@ -130,6 +130,7 @@ M.telescope = function()
 
 	-- General
 	map("n", "<leader>?", "<cmd>lua require('telescope.builtin').help_tags()<CR>")
+	map("n", "<leader>c", "<cmd>lua ToggleColumnHighlight() <CR>")
 
 	-- Git
 	map("n", "<leader>gb", "<cmd>Telescope git_branches <CR>")
