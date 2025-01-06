@@ -69,7 +69,12 @@ telescope.setup({
 		},
 		find_files = {
 			prompt_title = "Find Files (All)",
+			follow = true,
 			hidden = true,
+			no_ignore = true,
+			file_ignore_patterns = {
+				".git/",
+			},
 		},
 		git_bcommits = {
 			git_command = {
