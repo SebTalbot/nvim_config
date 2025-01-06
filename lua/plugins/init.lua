@@ -165,9 +165,6 @@ local plugins = {
 		"rbgrouleff/bclose.vim",
 	},
 	{
-		"numtostr/BufOnly.nvim",
-	},
-	{
 		"ashfinal/qfview.nvim",
 		config = function()
 			require("qfview").setup()

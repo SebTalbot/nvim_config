@@ -49,13 +49,14 @@ M.general = function()
 end
 
 M.buffers = function()
-	map("n", "<leader>bdd", "<cmd>Bclose! <CR>")
-	map("n", "<leader>bdo", "<cmd>BufOnly <CR><C-l>")
+	map("n", "<leader>bdd", "<cmd>Bclose!<CR>")
+	map("n", "<leader>bdo", "<cmd>BufferLineCloseOthers<CR>")
 	map("n", "<leader>bb", "<cmd>e#<CR>")
-	map("n", "<leader>bn", "<cmd>bn<CR>")
-	map("n", "<leader>bp", "<cmd>bp<CR>")
+	map("n", "<leader>bn", "<cmd>BufferLineCycleNext<CR>")
+	map("n", "<leader>bp", "<cmd>BufferLineCyclePrev<CR>")
 	map("n", "<leader>bj", "<cmd>BufferLineMoveNext<CR>")
 	map("n", "<leader>bk", "<cmd>BufferLineMovePrev<CR>")
+	map("n", "<leader>bs", "<cmd>BufferLineSortByRelativeDirectory<CR>")
 end
 
 M.windows = function()
