@@ -344,7 +344,10 @@ local plugins = {
 	-- Completion & Snippets
 	{
 		"codota/tabnine-nvim",
-		build = "./dl_binaries.sh",
+		build = {
+			"./dl_binaries.sh",
+			"cd chat/; cargo build --release"
+		},
 		config = function()
 			require("plugins.configs.tabnine")
 		end,
