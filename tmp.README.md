@@ -1,5 +1,5 @@
 # NvComfyGuration
-Lua configurations for Neovim `9.0`
+Lua configurations for Neovim `0.10.0`
 
 # Install
 # Dependencies
@@ -10,10 +10,12 @@ Lua configurations for Neovim `9.0`
 - [LuaRocks](https://github.com/luarocks/luarocks)
 - [StyLua](https://github.com/JohnnyMorganz/StyLua)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
+- [Yazi](https://github.com/sxyazi/yazi)
 
 - unzip
 
 Don't forget to run `:checkhealth`
+
 # Todo
 - Readme
 - wiki
