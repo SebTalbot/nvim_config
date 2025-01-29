@@ -210,8 +210,8 @@ local ignorePatterns = {
 	"node_modules/*",
 
 	-- Tests
-	"*/test/*", -- node
-	"*/tests/*", -- node
+	"**/test/*", -- node
+	"**/tests/*", -- node
 	"*.test.*", -- node
 	"*.tests.*", -- node
 	"*_test.go", -- golang
