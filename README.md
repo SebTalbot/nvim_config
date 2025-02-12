@@ -1,5 +1,5 @@
 # NvComfyGuration
-Lua configurations for Neovim `0.10.0`
+Lua configurations for Neovim `0.10.4`
 
 # Install
 # Dependencies
@@ -15,7 +15,3 @@ Lua configurations for Neovim `0.10.0`
 - unzip
 
 Don't forget to run `:checkhealth`
-
-# Todo
-- Readme
-- wiki
