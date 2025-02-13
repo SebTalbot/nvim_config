@@ -22,6 +22,7 @@ mason_installer.setup({
 		"tree-sitter-cli",
 		"vue-language-server",
 		"yaml-language-server",
+		"lua-language-server"
 	},
 })
 
@@ -33,6 +34,8 @@ end
 
 local handlers = require("plugins.configs.lsp.handlers")
 
+require("plugins.configs.lsp.lua-language-server")
+
 lspconfig.bashls.setup(handlers.inject({}))
 lspconfig.cssls.setup(handlers.inject({}))
 lspconfig.dockerls.setup(handlers.inject({}))
@@ -42,7 +45,6 @@ lspconfig.gopls.setup(handlers.inject({}))
 lspconfig.graphql.setup(handlers.inject({}))
 lspconfig.html.setup(handlers.inject({}))
 lspconfig.jsonls.setup(handlers.inject(require("plugins.configs.lsp.settings.jsonls")))
-lspconfig.lua_ls.setup(handlers.inject(require("plugins.configs.lsp.settings.lua_ls")))
 lspconfig.shopify_theme_ls.setup(handlers.inject({}))
 lspconfig.pyright.setup(handlers.inject({}))
 lspconfig.taplo.setup(handlers.inject({}))
