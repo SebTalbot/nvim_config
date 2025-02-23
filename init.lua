@@ -1,5 +1,5 @@
--- Lazy.vim
 vim.g.mapleader = " " -- Space leader key
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({

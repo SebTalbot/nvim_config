@@ -61,7 +61,7 @@ local capabilities = function()
 end
 
 local on_attach = function(client, bufnr)
-	require("core.mappings").lsp(bufnr)
+	-- require("core.mappings").lsp(bufnr)
 	lsp_highlight_document(client)
 end
 
