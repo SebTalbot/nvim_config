@@ -56,6 +56,15 @@ lspconfig.ts_ls.setup(handlers.inject(require("plugins.configs.lsp.settings.tsse
 lspconfig.vimls.setup(handlers.inject({}))
 lspconfig.yamlls.setup(handlers.inject({}))
 
+local sqls = require("sqls")
+lspconfig.sqls.setup(handlers.inject({
+	on_attach = function(client, bufnr)
+		require("core.mappings").lsp(bufnr)
+		sqls.on_attach(client, bufnr) -- require sqls.nvim
+	end,
+	cmd = { "sqls", "-config", vim.fn.expand("$HOME/.config/sqls/config.yml") }
+}))
+
 -- @TODO Move to setting file
 lspconfig.volar.setup(handlers.inject({
 	init_options = {

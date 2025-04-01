@@ -287,6 +287,9 @@ local plugins = {
 		end,
 	},
 	{
+		"nanotee/sqls.nvim",
+	},
+	{
 		"neovim/nvim-lspconfig",
 	},
 	{
