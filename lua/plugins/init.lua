@@ -283,11 +283,7 @@ local plugins = {
 		lazy = false,
 		build = ":MasonUpdate",
 		config = function()
-			require("mason").setup({
-				handlers = {
-					pylint = function() end,
-				},
-			})
+			require("mason").setup()
 		end,
 	},
 	{
@@ -305,14 +301,7 @@ local plugins = {
 		end,
 	},
 	{
-		"jose-elias-alvarez/null-ls.nvim",
-	},
-	{
-		"jayp0521/mason-null-ls.nvim",
-		dependencies = {
-			"mason.nvim",
-			"null-ls.nvim",
-		},
+		"nvimtools/none-ls.nvim",
 	},
 
 	-- DAP plugins

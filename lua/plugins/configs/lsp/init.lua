@@ -16,7 +16,6 @@ end
 
 mason_installer.setup({
 	ensure_installed = {
-		-- "goimports-reviser",
 		"shopify-cli",
 		"shopify-theme-check",
 		"tree-sitter-cli",
@@ -38,7 +37,14 @@ lspconfig.cssls.setup(handlers.inject({}))
 lspconfig.dockerls.setup(handlers.inject({}))
 lspconfig.emmet_ls.setup(handlers.inject({}))
 lspconfig.eslint.setup(handlers.inject({}))
-lspconfig.gopls.setup(handlers.inject({}))
+lspconfig.gopls.setup(handlers.inject({
+	settings = {
+		gopls = {
+			gofumpt = true
+		}
+	}
+}))
+lspconfig.golangci_lint_ls.setup(handlers.inject({}))
 lspconfig.graphql.setup(handlers.inject({}))
 lspconfig.html.setup(handlers.inject({}))
 lspconfig.jsonls.setup(handlers.inject(require("plugins.configs.lsp.settings.jsonls")))
