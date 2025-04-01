@@ -22,7 +22,9 @@ bufferline.setup({
 		show_buffer_icons = false,
 		show_buffer_close_icons = false,
 		show_tab_indicators = false,
-		show_duplicate_prefix = false,
+		show_duplicate_prefix = true,
+		max_prefix_length = 6,
+		truncate_names = false,
 		sort_by = "insert_at_end",
 		always_show_bufferline = false,
 		auto_toggle_bufferline = true,
@@ -151,6 +153,26 @@ bufferline.setup({
 			fg = {
 				attribute = "fg",
 				highlight = "Character",
+			},
+			bg = {
+				attribute = "bg",
+				highlight = "lualine_b_inactive",
+			},
+		},
+		trunc_marker = {
+			fg = {
+				attribute = "fg",
+				highlight = "lualine_b_inactive",
+			},
+			bg = {
+				attribute = "bg",
+				highlight = "lualine_b_inactive",
+			},
+		},
+		offset_separator = {
+			fg = {
+				attribute = "fg",
+				highlight = "lualine_b_inactive",
 			},
 			bg = {
 				attribute = "bg",

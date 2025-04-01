@@ -24,6 +24,9 @@ local plugins = {
 			vim.cmd([[hi @string.escape guifg=#E69875]])
 			-- bugged in bufferline
 			vim.cmd([[hi BufferLineIndicatorSelected guifg=#475258 guibg=#475258]])
+			vim.cmd([[hi BufferLineDuplicate guifg=#7e8a82 guibg=#343f44]])
+			vim.cmd([[hi BufferLineDuplicateSelected guifg=#7e8a82 guibg=#475258]])
+			vim.cmd([[hi BufferLineDuplicateVisible guifg=#7e8a82 guibg=#343f44]])
 
 			vim.cmd([[hi DiagnosticUnderlineError guifg=none]])
 		end,
