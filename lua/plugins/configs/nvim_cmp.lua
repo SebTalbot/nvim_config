@@ -60,14 +60,16 @@ cmp.setup({
 	sorting = {
 		priority_weight = 2,
 		comparators = {
-			compare.offset,
-			compare.exact,
-			compare.score,
-			-- compare.recently_used,
-			compare.kind,
-			compare.sort_text,
-			compare.length,
-			compare.order,
+        compare.offset,
+        compare.exact,
+        -- compare.scopes,
+        compare.score,
+        compare.sort_text,
+        compare.recently_used,
+        compare.locality,
+        compare.kind,
+        compare.length,
+        compare.order,
 		},
 	},
 	snippet = {
@@ -90,22 +92,22 @@ cmp.setup({
 		}),
 		["<C-e>"] = cmp.mapping.confirm({ select = true }),
 	},
-	formatting = {
-		fields = { "abbr", "kind", "menu" },
-		format = function(entry, vim_item)
-			vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
-			local menu = menu_tags[entry.source.name]
-
-			vim_item.menu = menu
-
-			return vim_item
-		end,
-	},
-	sources = {
+	-- formatting = {
+	-- 	fields = { "abbr", "kind", "menu" },
+	-- 	format = function(entry, vim_item)
+	-- 		vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
+	-- 		local menu = menu_tags[entry.source.name]
+	--
+	-- 		vim_item.menu = menu
+	--
+	-- 		return vim_item
+	-- 	end,
+	-- },
+	sources = cmp.config.sources {
 		{ name = "nvim_lsp" },
-		{ name = "nvim_lua" },
 		{ name = "luasnip" },
-		{ name = "buffer" },
+		{ name = "nvim_lua" },
+		-- { name = "buffer" },
 		{ name = "path" },
 	},
 	confirm_opts = {
