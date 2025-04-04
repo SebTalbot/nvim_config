@@ -44,7 +44,7 @@ n("<leader>bk", c("BufferLineMovePrev"), "Move prev")
 n("<leader>bs", c("BufferLineSortByRelativeDirectory"), "Sort")
 
 n("<leader>bd", "", "Close")
--- n("<leader>bdd", c("Bclose!"), "Current")
+n("<leader>bdd", c("Bclose!"), "Current")
 n("<leader>bdo", c("BufferLineCloseOthers"), "Others")
 
 -- Windows --
