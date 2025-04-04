@@ -37,15 +37,15 @@ n("<leader>yy", c("let @+ = expand('%:t:r')"), "File name")
 -- Buffers --
 n("<leader>b", "", "Buffers")
 n("<leader>bb", c("e#"), "Previous buffer")
--- n("<leader>bn", c("BufferLineCycleNext"), "Cycle Next")
--- n("<leader>bp", c("BufferLineCyclePrev"), "Cycle Prev")
--- n("<leader>bj", c("BufferLineMoveNext"), "Move Next")
--- n("<leader>bk", c("BufferLineMovePrev"), "Move prev")
--- n("<leader>bs", c("BufferLineSortByRelativeDirectory"), "Sort")
+n("<leader>bn", c("BufferLineCycleNext"), "Cycle Next")
+n("<leader>bp", c("BufferLineCyclePrev"), "Cycle Prev")
+n("<leader>bj", c("BufferLineMoveNext"), "Move Next")
+n("<leader>bk", c("BufferLineMovePrev"), "Move prev")
+n("<leader>bs", c("BufferLineSortByRelativeDirectory"), "Sort")
 
--- n("<leader>bd", "", "Close")
+n("<leader>bd", "", "Close")
 -- n("<leader>bdd", c("Bclose!"), "Current")
--- n("<leader>bdo", c("BufferLineCloseOthers"), "Others")
+n("<leader>bdo", c("BufferLineCloseOthers"), "Others")
 
 -- Windows --
 n("<leader>w", "", "Windows")
