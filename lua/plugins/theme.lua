@@ -1,6 +1,7 @@
 return {
 	"SebTalbot/everforest-nvim",
 	lazy = false,
+	priority = 51,
 	config = function()
 		require("everforest").setup()
 		vim.cmd([[colorscheme everforest]])
