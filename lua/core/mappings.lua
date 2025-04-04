@@ -63,7 +63,7 @@ n("<leader>wv", "<C-w>v", "Split Vertically")
 
 n("<leader>wr", "", "Resize")
 n("<leader>wre", "<C-w>=", "Equal")
--- n("<leader>wrr", c("call lens#run()"), "Needed")
+n("<leader>wrr", c("call lens#run()"), "Max Line")
 
 -- Applications --
 n("<leader>a", "", "Applications")
