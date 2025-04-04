@@ -22,5 +22,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	require("plugins.theme")
+	require("plugins.theme"),
+	require("plugins.which-key"),
 })
