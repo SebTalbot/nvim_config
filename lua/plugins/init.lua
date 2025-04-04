@@ -25,6 +25,7 @@ require("lazy").setup({
 	require("plugins.theme"),
 	require("plugins.which-key"),
 	require("plugins.bufferline"),
+	require("plugins.telescope"),
 	require("plugins.lens"), --- @deprecated
 	"rbgrouleff/bclose.vim",
 })

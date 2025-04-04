@@ -78,3 +78,20 @@ n("<leader>zp", c("e ~/.config/polybar/config"), "Polybar")
 n("<leader>zr", c("e ~/.config/rofi/config.rasi"), "Rofi")
 n("<leader>zt", c("e ~/.config/kitty/kitty.conf"), "Kitty")
 n("<leader>zz", c("e ~/.zshrc"), "ZSH")
+
+-- Search
+n("<leader>s", "", "Search")
+n("<leader>sb", c("Telescope buffers"), "Buffers")
+n("<leader>sf", c("Telescope find_files"), "Files")
+n("<leader>sg", c("Telescope live_grep"), "Ripgrep (faster)")
+n("<leader>sh", c("Telescope help_tags"), "Help")
+n("<leader>sr", c("Telescope resume"), "Resume last search")
+n("<leader>sw", c("Telescope grep_string"), "Grep (slower)")
+
+-- Git
+n("<leader>g", "", "Git")
+n("<leader>gb", c("Telescope git_branches"), "Branches")
+n("<leader>gc", c("Telescope git_commits"), "Commits (Project)")
+n("<leader>gC", c("Telescope git_bcommits"), "Commits (Buffer)")
+n("<leader>gs", c("Telescope git_status"), "Status")
+n("<leader>gS", c("Telescope git_stach"), "Stach")
