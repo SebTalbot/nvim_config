@@ -1,0 +1,43 @@
+return {
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
+	opts = {
+		ensure_installed = {
+			"bash",
+			"css",
+			"dockerfile",
+			"gitignore",
+			"go",
+			"gomod",
+			"gosum",
+			"gotmpl",
+			"graphql",
+			"html",
+			"javascript",
+			"json",
+			"liquidsoap",
+			"lua",
+			"markdown",
+			"printf",
+			"python",
+			"regex",
+			"scss",
+			"sql",
+			"toml",
+			"tsx",
+			"typescript",
+			"vim",
+			"vue",
+			"yaml",
+		},
+		highlight = {
+			enable = true,
+		},
+		indent = {
+			enable = true,
+		},
+		autopairs = {
+			enable = true,
+		},
+	},
+}
