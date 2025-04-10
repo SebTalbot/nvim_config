@@ -65,6 +65,12 @@ n("<leader>wr", "", "Resize")
 n("<leader>wre", "<C-w>=", "Equal")
 n("<leader>wrr", c("call lens#run()"), "Max Line")
 
+-- Files Manager --
+n("<leader>n", "", "Files Manager")
+n("<leader>nn", c("Yazi"), "Current File")
+n("<leader>np", c("Yazi cwd"), "Project Root")
+n("<leader>nt", c("Yazi toggle"), "Toggle last session")
+
 -- Applications --
 n("<leader>a", "", "Applications")
 n("<leader>ah", c("checkhealth"), "Check health")

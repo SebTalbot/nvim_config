@@ -36,6 +36,7 @@ require("lazy").setup({
 	require("plugins.surround"),
 	require("plugins.undotree"),
 	require("plugins.which-key"),
+	require("plugins.yazi"),
 	require("plugins.lens"), --- @deprecated replace
 	"andymass/vim-matchup",
 	"rbgrouleff/bclose.vim", --- @deprecated move to config
