@@ -34,6 +34,7 @@ require("lazy").setup({
 	require("plugins.treesitter"),
 	require("plugins.treesitter-commentstring"),
 	require("plugins.surround"),
+	require("plugins.undotree"),
 	require("plugins.which-key"),
 	require("plugins.lens"), --- @deprecated replace
 	"andymass/vim-matchup",

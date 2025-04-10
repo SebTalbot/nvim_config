@@ -69,6 +69,7 @@ n("<leader>wrr", c("call lens#run()"), "Max Line")
 n("<leader>a", "", "Applications")
 n("<leader>ah", c("checkhealth"), "Check health")
 n("<leader>al", c("Lazy"), "Lazy (plugin manager)")
+n("<leader>au", c("lua require('undotree').toggle()"), "Undotree")
 -- n("<leader>am", c("Mason"), "Mason (LSP package manager)")
 
 -- Files
