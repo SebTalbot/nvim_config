@@ -27,6 +27,7 @@ require("lazy").setup({
 	require("plugins.bufferline"),
 	require("plugins.telescope"),
 	require("plugins.gitsigns"),
+	require("plugins.lazygit"),
 	require("plugins.lens"), --- @deprecated replace
 	"rbgrouleff/bclose.vim", --- @deprecated move to config
 })

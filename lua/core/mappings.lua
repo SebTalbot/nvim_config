@@ -90,6 +90,7 @@ n("<leader>sw", c("Telescope grep_string"), "Grep (slower)")
 
 -- Git
 n("<leader>g", "", "Git")
+n("<leader>ge", c("LazyGit"), "LazyGit")
 n("<leader>gb", c("Telescope git_branches"), "Branches")
 n("<leader>gc", c("Telescope git_bcommits"), "Buffer Commits")
 n("<leader>gC", c("Telescope git_commits"), "Project Commits")
