@@ -22,6 +22,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+	require("plugins.autopairs"),
 	require("plugins.bufferline"),
 	require("plugins.gitsigns"),
 	require("plugins.indent-blankline"),
