@@ -12,7 +12,7 @@ if not vim.uv.fs_stat(lazypath) then
 	if vim.v.shell_error ~= 0 then
 		vim.api.nvim_echo({
 			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-			{ out,                            "WarningMsg" },
+			{ out, "WarningMsg" },
 			{ "\nPress any key to exit..." },
 		}, true, {})
 		vim.fn.getchar()
@@ -26,6 +26,7 @@ require("lazy").setup({
 	require("plugins.which-key"),
 	require("plugins.bufferline"),
 	require("plugins.telescope"),
-	require("plugins.lens"), --- @deprecated
-	"rbgrouleff/bclose.vim",
+	require("plugins.gitsigns"),
+	require("plugins.lens"), --- @deprecated replace
+	"rbgrouleff/bclose.vim", --- @deprecated move to config
 })
