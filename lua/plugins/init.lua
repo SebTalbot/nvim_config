@@ -22,13 +22,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	require("plugins.theme"),
-	require("plugins.which-key"),
 	require("plugins.bufferline"),
-	require("plugins.telescope"),
 	require("plugins.gitsigns"),
 	require("plugins.lazygit"),
 	require("plugins.lualine"),
+	require("plugins.telescope"),
+	require("plugins.theme"),
+	require("plugins.which-key"),
 	require("plugins.lens"), --- @deprecated replace
 	"rbgrouleff/bclose.vim", --- @deprecated move to config
 })
