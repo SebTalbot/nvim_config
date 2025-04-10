@@ -31,6 +31,7 @@ require("lazy").setup({
 	require("plugins.telescope"),
 	require("plugins.theme"),
 	require("plugins.treesitter"),
+	require("plugins.treesitter-commentstring"),
 	require("plugins.surround"),
 	require("plugins.which-key"),
 	require("plugins.lens"), --- @deprecated replace
