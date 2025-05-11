@@ -11,6 +11,7 @@ vim.g.maplocalleader = "\\"
 
 n("q:", "<nop>", "Disabled")
 n("Q", "<nop>", "Disabled")
+n("Q:", "<nop>", "Disabled")
 v("u", "<nop>", "Disabled")
 n("<C-z>", "<nop>", "Disabled")
 
@@ -30,6 +31,10 @@ n("<leader>", "", "Custom Keys")
 n("<leader><leader>", c("WhichKey"), "Normal Keys")
 n("<leader>*", "*``", "Match word")
 n("<leader>/", c("nohlsearch"), "Remove match highlight")
+
+n("<leader>q", "", "Quit")
+n("<leader>qq", c("qa!"), "Force Quit")
+n("<leader>qw", c("qw"), "Save Quit")
 
 n("<leader>y", "", "Yank")
 n("<leader>yf", c("let @+ = expand('%:r')"), "Current path")
