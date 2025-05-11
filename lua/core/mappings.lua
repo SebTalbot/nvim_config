@@ -83,6 +83,7 @@ n("<leader>ah", c("checkhealth"), "Check health")
 n("<leader>al", c("Lazy"), "Lazy (plugin manager)")
 n("<leader>au", c("lua require('undotree').toggle()"), "Undotree")
 n("<leader>am", c("Mason"), "Mason (LSP package manager)")
+n("<leader>at", c("TabnineChat"), "Tabnine Chat")
 
 -- Files
 n("<leader>z", "", "Open System File")

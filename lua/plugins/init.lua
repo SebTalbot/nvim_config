@@ -35,6 +35,7 @@ require("lazy").setup({
 	require("plugins.mason-lspconfig"),
 	require("plugins.null-ls"), --- @deprecated move to native
 	require("plugins.surround"),
+	require("plugins.tabnine"),
 	require("plugins.telescope"),
 	require("plugins.theme"),
 	require("plugins.treesitter"),
