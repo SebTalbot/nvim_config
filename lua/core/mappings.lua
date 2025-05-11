@@ -4,6 +4,7 @@ local v = map.VisualMap
 local i = map.InsertMap
 local t = map.TerminalMap
 local c = map.CommandString
+local f = map.Function
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
@@ -131,12 +132,30 @@ n("<leader>lar", vim.lsp.buf.rename, "Rename")
 -- Diagnostic
 n("<leader>e", "", "Diagnostic")
 n("<leader>ee", vim.diagnostic.open_float, "Details")
-n("<leader>ep", vim.diagnostic.goto_prev, "Previous")
-n("<leader>eP", function()
-	vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.ERROR })
-end, "Previous Error")
-n("<leader>en", vim.diagnostic.goto_next, "Next")
-n("<leader>eN", function()
-	vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR })
-end, "Next Error")
+n(
+	"<leader>ep",
+	f(vim.diagnostic.jump, { count = -1, float = true }),
+	"Previous"
+)
+n(
+	"<leader>eP",
+	f(
+		vim.diagnostic.jump,
+		{ count = -1, float = true, severity = vim.diagnostic.severity.ERROR }
+	),
+	"Previous Error"
+)
+n(
+	"<leader>en",
+	f(vim.diagnostic.jump, { count = 1, float = true }),
+	"Next"
+)
+n(
+	"<leader>eN",
+	f(
+		vim.diagnostic.jump,
+		{ count = 1, float = true, severity = vim.diagnostic.severity.ERROR }
+	),
+	"Next Error"
+)
 n("<leader>el", vim.diagnostic.setloclist, "Fix list")

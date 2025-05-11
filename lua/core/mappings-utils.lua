@@ -56,4 +56,13 @@ M.CommandString = function(command)
 	return "<cmd>" .. command .. "<CR>"
 end
 
+--- @param func function The command to execute
+--- @param params any The command to execute
+--- @return function
+M.Function = function(func, params)
+	return function()
+		func(params)
+	end
+end
+
 return M
