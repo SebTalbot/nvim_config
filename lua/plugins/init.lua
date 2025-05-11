@@ -24,17 +24,21 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	require("plugins.autopairs"),
 	require("plugins.bufferline"),
-	require("plugins.colorizer"),
 	require("plugins.cmp"),
+	require("plugins.colorizer"),
 	require("plugins.gitsigns"),
 	require("plugins.indent-blankline"),
 	require("plugins.lazygit"),
+	require("plugins.lspconfig"), --- @deprecated move to native
 	require("plugins.lualine"),
+	require("plugins.mason"),
+	require("plugins.mason-lspconfig"),
+	require("plugins.null-ls"), --- @deprecated move to native
+	require("plugins.surround"),
 	require("plugins.telescope"),
 	require("plugins.theme"),
 	require("plugins.treesitter"),
 	require("plugins.treesitter-commentstring"),
-	require("plugins.surround"),
 	require("plugins.undotree"),
 	require("plugins.which-key"),
 	require("plugins.yazi"),
