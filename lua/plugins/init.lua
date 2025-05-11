@@ -25,6 +25,7 @@ require("lazy").setup({
 	require("plugins.autopairs"),
 	require("plugins.bufferline"),
 	require("plugins.colorizer"),
+	require("plugins.cmp"),
 	require("plugins.gitsigns"),
 	require("plugins.indent-blankline"),
 	require("plugins.lazygit"),
