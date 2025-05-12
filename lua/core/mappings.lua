@@ -70,6 +70,10 @@ n("<leader>wv", "<C-w>v", "Split Vertically")
 n("<leader>wr", "", "Resize")
 n("<leader>wre", "<C-w>=", "Equal")
 n("<leader>wrr", c("call lens#run()"), "Max Line")
+n("<leader>wrj", "<cmd>resize +5<CR>", "Taller")
+n("<leader>wrk", "<cmd>resize -5<CR>", "Shorter")
+n("<leader>wrl", "<cmd>vertical resize +5<CR>", "Wider")
+n("<leader>wrh", "<cmd>vertical resize -5<CR>", "Narrower")
 
 -- Files Manager --
 n("<leader>n", "", "Files Manager")
