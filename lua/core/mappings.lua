@@ -12,7 +12,6 @@ vim.g.maplocalleader = "\\"
 n("q:", "<nop>", "Disabled")
 n("Q", "<nop>", "Disabled")
 n("Q:", "<nop>", "Disabled")
-v("u", "<nop>", "Disabled")
 n("<C-z>", "<nop>", "Disabled")
 
 -- General mappings --
@@ -32,9 +31,10 @@ n("<leader><leader>", c("WhichKey"), "Normal Keys")
 n("<leader>*", "*``", "Match word")
 n("<leader>/", c("nohlsearch"), "Remove match highlight")
 
-n("<leader>q", "", "Quit")
+n("<leader>q", "", "General")
 n("<leader>qq", c("qa!"), "Force Quit")
-n("<leader>qw", c("qw"), "Save Quit")
+n("<leader>qw", c("qw"), "Save")
+n("<leader>qw", c("qa"), "Save all")
 
 n("<leader>y", "", "Yank")
 n("<leader>yf", c("let @+ = expand('%:r')"), "Current path")
@@ -94,13 +94,22 @@ n("<leader>zt", c("e ~/.config/kitty/kitty.conf"), "Kitty")
 n("<leader>zz", c("e ~/.zshrc"), "ZSH")
 
 -- Search
+local Search = require("core.mappings-search")
 n("<leader>s", "", "Search")
 n("<leader>sb", c("Telescope buffers"), "Buffers")
-n("<leader>sf", c("Telescope find_files"), "Files")
-n("<leader>sg", c("Telescope live_grep"), "Ripgrep (faster)")
+n("<leader>sf", Search.Files, "Files")
+n("<leader>sg", Search.LiveGrep, "Ripgrep (faster)")
 n("<leader>sh", c("Telescope help_tags"), "Help")
 n("<leader>sr", c("Telescope resume"), "Resume last search")
-n("<leader>sw", c("Telescope grep_string"), "Grep (slower)")
+n("<leader>sw", Search.GrepString, "Fuzzy (slower)")
+n("<leader>st", "", "Tests")
+n("<leader>stf", Search.TestsFiles, "Files")
+n("<leader>stg", Search.TestsLiveGrep, "Ripgrep (faster)")
+n("<leader>stw", Search.TestsGrepString, "Fuzzy (slower)")
+n("<leader>sa", "", "All")
+n("<leader>saf", c("Telescope find_files"), "Files")
+n("<leader>sag", c("Telescope live_grep"), "Ripgrep (faster)")
+n("<leader>saw", c("Telescope grep_string"), "Fuzzy (slower)")
 
 -- Git
 n("<leader>g", "", "Git")
@@ -151,11 +160,7 @@ n(
 	),
 	"Previous Error"
 )
-n(
-	"<leader>en",
-	f(vim.diagnostic.jump, { count = 1, float = true }),
-	"Next"
-)
+n("<leader>en", f(vim.diagnostic.jump, { count = 1, float = true }), "Next")
 n(
 	"<leader>eN",
 	f(

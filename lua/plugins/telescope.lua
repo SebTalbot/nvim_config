@@ -46,12 +46,9 @@ return {
 					follow = true,
 					hidden = true,
 					no_ignore = true,
-					file_ignore_patterns = {
-						".git/",
-					},
 				},
 				grep_string = {
-					prompt_title = "Find Fuzzy (All)",
+					prompt_title = "Fuzzy (All)",
 					disable_coordinates = true,
 					only_sort_text = false,
 					search = "\\w",
@@ -60,16 +57,18 @@ return {
 				help_tags = {
 					mappings = { i = { ["<CR>"] = actions.select_vertical } },
 				},
+				-- Syntax:
+				-- https://docs.rs/regex/1.11.1/regex/#syntax
 				live_grep = {
-					prompt_title = "Find Regex (All)",
+					prompt_title = "Ripgrep (All)",
 					additional_args = {
 						"--hidden",
 						"--no-ignore",
 					},
 					glob_pattern = {
-						"!.git/*",
+						-- "!.git/*",
 					},
-					disable_coordinates = true,
+					disable_coordinates = false,
 				},
 			},
 			extensions = {
