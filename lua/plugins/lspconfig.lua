@@ -23,7 +23,7 @@ return {
 		lspconfig.shopify_theme_ls.setup({})
 		lspconfig.pyright.setup({})
 		lspconfig.taplo.setup({})
-		lspconfig.ts_ls.setup({})
+		lspconfig.ts_ls.setup(require("lsp.tsserver"))
 		lspconfig.vimls.setup({})
 		lspconfig.yamlls.setup({})
 
