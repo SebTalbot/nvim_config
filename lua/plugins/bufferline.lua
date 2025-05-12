@@ -6,7 +6,6 @@ return {
 		options = {
 			always_show_bufferline = false,
 			auto_toggle_bufferline = true,
-			max_prefix_length = 6,
 			mode = "buffers",
 			separator_style = "thin",
 			show_buffer_close_icons = false,
