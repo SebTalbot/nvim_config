@@ -13,10 +13,10 @@ return {
 		preferences = {
 			allowRenameOfImportPath = true,
 			importModuleSpecifierEnding = "auto",
-			importModuleSpecifierPreference = "non-relative",
+			-- importModuleSpecifierPreference = "non-relative",
 			includeCompletionsForImportStatements = true,
 			includeCompletionsForModuleExports = true,
-			quotePreference = "single",
+			-- quotePreference = "single",
 		},
 	},
 	filetypes = {
