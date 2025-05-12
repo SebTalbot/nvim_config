@@ -33,8 +33,8 @@ n("<leader>/", c("nohlsearch"), "Remove match highlight")
 
 n("<leader>q", "", "General")
 n("<leader>qq", c("qa!"), "Force Quit")
-n("<leader>qw", c("qw"), "Save")
-n("<leader>qw", c("qa"), "Save all")
+n("<leader>qw", c("w"), "Save")
+n("<leader>qa", c("wa"), "Save all")
 
 n("<leader>y", "", "Yank")
 n("<leader>yf", c("let @+ = expand('%:r')"), "Current path")
