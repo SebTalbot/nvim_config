@@ -65,10 +65,31 @@ return {
 						"--hidden",
 						"--no-ignore",
 					},
-					glob_pattern = {
-						-- "!.git/*",
-					},
 					disable_coordinates = false,
+				},
+				lsp_definitions = {
+					prompt_title = "LSP Definitions (All)",
+					fname_width = 60,
+					path_display = { shorten = 4 },
+					trim_text = true,
+				},
+				lsp_implementations = {
+					prompt_title = "LSP Implementations (All)",
+					fname_width = 60,
+					path_display = { shorten = 4 },
+					trim_text = true,
+				},
+				lsp_references = {
+					prompt_title = "LSP References (All)",
+					fname_width = 60,
+					path_display = { shorten = 4 },
+					trim_text = true,
+				},
+				lsp_type_definitions = {
+					prompt_title = "LSP Type Definitions (All)",
+					fname_width = 60,
+					path_display = { shorten = 4 },
+					trim_text = true,
 				},
 			},
 			extensions = {
