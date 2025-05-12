@@ -1,3 +1,4 @@
+
 local map = require("core.mappings-utils")
 local n = map.NormalMap
 local v = map.VisualMap
@@ -26,10 +27,14 @@ n("<C-s>", c("write!"), "Save file")
 i("<C-s>", c("write!"), "Save file")
 t("<C-space>", "<C-\\><C-n>", "Normal mode")
 
+
 n("<leader>", "", "Custom Keys")
 n("<leader><leader>", c("WhichKey"), "Normal Keys")
 n("<leader>*", "*``", "Match word")
 n("<leader>/", c("nohlsearch"), "Remove match highlight")
+
+local column = require("core.column")
+n("<leader>c", column.ToggleHighlight, "Remove match highlight")
 
 n("<leader>q", "", "General")
 n("<leader>qq", c("qa!"), "Force Quit")
