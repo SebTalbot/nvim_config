@@ -137,6 +137,9 @@ n("<leader>gaS", c("Gitsigns stage_buffer"), "Buffer Stage")
 local Lsp = require("core.mappings-lsp")
 n("S-k", vim.lsp.buf.hover, "LSP Hover")
 n("<leader>l", "", "LSP")
+n("<leader>ll", vim.lsp.buf.format, "Format")
+n("<leader>lc", vim.lsp.buf.rename, "Rename")
+
 n("<leader>ld", Lsp.Definitions, "Definitions")
 n("<leader>li", Lsp.Implementations, "Implementations")
 n("<leader>lr", Lsp.References, "References")
@@ -147,10 +150,6 @@ n("<leader>lad", c("Telescope lsp_definitions"), "References")
 n("<leader>lai", c("Telescope lsp_implementations"), "References")
 n("<leader>lar", c("Telescope lsp_references"), "References")
 n("<leader>lat", c("Telescope lsp_type_definitions"), "References")
-
-n("<leader>lx", "", "Actions")
-n("<leader>lxf", vim.lsp.buf.format, "Format")
-n("<leader>lxr", vim.lsp.buf.rename, "Rename")
 
 -- Diagnostic
 n("<leader>e", "", "Diagnostic")
