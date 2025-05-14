@@ -155,10 +155,10 @@ n("<leader>lr", Lsp.References, "References")
 n("<leader>lt", Lsp.TypeDefinitions, "Type Definitions")
 
 n("<leader>la", "", "All")
-n("<leader>lad", c("Telescope lsp_definitions"), "References")
-n("<leader>lai", c("Telescope lsp_implementations"), "References")
+n("<leader>lad", c("Telescope lsp_definitions"), "Definitions")
+n("<leader>lai", c("Telescope lsp_implementations"), "Implementations")
 n("<leader>lar", c("Telescope lsp_references"), "References")
-n("<leader>lat", c("Telescope lsp_type_definitions"), "References")
+n("<leader>lat", c("Telescope lsp_type_definitions"), "Type Definitions")
 
 -- Diagnostic
 n("<leader>e", "", "Diagnostic")
