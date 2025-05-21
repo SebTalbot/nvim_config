@@ -11,6 +11,7 @@ return {
 		lspconfig.gopls.setup({
 			settings = {
 				gopls = {
+					buildFlags = { "-tags=integration,unit" },
 					gofumpt = true,
 				},
 			},
