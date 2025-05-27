@@ -19,7 +19,7 @@ return {
 			"ts_ls",
 			"vimls",
 			"yamlls",
-			"volar",
+			"vue-language-server",
 			"theme_check",
 		},
 		automatic_enable = false,
