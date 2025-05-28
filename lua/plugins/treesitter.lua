@@ -36,6 +36,9 @@ return {
 			indent = {
 				enable = true,
 			},
+			fold = {
+				enable = true,
+			},
 			autopairs = {
 				enable = true,
 			},

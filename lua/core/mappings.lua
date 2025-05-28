@@ -27,6 +27,13 @@ n("<C-s>", c("write!"), "Save file")
 i("<C-s>", c("write!"), "Save file")
 t("<C-space>", "<C-\\><C-n>", "Normal mode")
 
+local ok, ufo = pcall(require, "ufo")
+if ok then
+	n("zR", ufo.openAllFolds, "open all folds")
+	n("zM", ufo.closeAllFolds, "close all folds")
+	n("zr", ufo.openFoldsExceptKinds, "open fold")
+	n("zm", ufo.closeFoldsWith, "close fold")
+end
 
 n("<leader>", "", "Custom Keys")
 n("<leader><leader>", c("WhichKey"), "Normal Keys")
