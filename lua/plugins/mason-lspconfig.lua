@@ -19,7 +19,7 @@ return {
 			"ts_ls",
 			"vimls",
 			"yamlls",
-			"vue-language-server",
+			-- "vue-language-server", -- warning not supported anymore
 			"theme_check",
 		},
 		automatic_enable = false,
