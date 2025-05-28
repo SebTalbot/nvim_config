@@ -1,4 +1,3 @@
-
 local map = require("core.mappings-utils")
 local n = map.NormalMap
 local v = map.VisualMap
@@ -26,6 +25,9 @@ v("<C-k>", ":m '<-2<CR>gv=gv", "Move line up")
 n("<C-s>", c("write!"), "Save file")
 i("<C-s>", c("write!"), "Save file")
 t("<C-space>", "<C-\\><C-n>", "Normal mode")
+
+n("<C-u>", "<C-u>zz", "Half page up and center")
+n("<C-d>", "<C-d>zz", "Half page down and center")
 
 local ok, ufo = pcall(require, "ufo")
 if ok then
