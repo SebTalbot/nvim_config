@@ -40,6 +40,7 @@ require("lazy").setup({
 	require("plugins.theme"),
 	require("plugins.treesitter"),
 	require("plugins.treesitter-commentstring"),
+	require("plugins.treesitter-context"),
 	require("plugins.undotree"),
 	require("plugins.which-key"),
 	require("plugins.yazi"),
