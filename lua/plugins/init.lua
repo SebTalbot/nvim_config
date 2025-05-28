@@ -41,7 +41,6 @@ require("lazy").setup({
 	require("plugins.treesitter"),
 	require("plugins.treesitter-commentstring"),
 	require("plugins.treesitter-context"),
-	require("plugins.ufo"),
 	require("plugins.undotree"),
 	require("plugins.which-key"),
 	require("plugins.yazi"),

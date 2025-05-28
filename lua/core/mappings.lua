@@ -29,14 +29,6 @@ t("<C-space>", "<C-\\><C-n>", "Normal mode")
 n("<C-u>", "<C-u>zz", "Half page up and center")
 n("<C-d>", "<C-d>zz", "Half page down and center")
 
-local ok, ufo = pcall(require, "ufo")
-if ok then
-	n("zR", ufo.openAllFolds, "open all folds")
-	n("zM", ufo.closeAllFolds, "close all folds")
-	n("zr", ufo.openFoldsExceptKinds, "open fold")
-	n("zm", ufo.closeFoldsWith, "close fold")
-end
-
 n("<leader>", "", "Custom Keys")
 n("<leader><leader>", c("WhichKey"), "Normal Keys")
 n("<leader>*", "*``", "Match word")
