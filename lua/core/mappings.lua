@@ -34,7 +34,7 @@ n("<leader>*", "*``", "Match word")
 n("<leader>/", c("nohlsearch"), "Remove match highlight")
 
 local column = require("core.column")
-n("<leader>c", column.ToggleHighlight, "Remove match highlight")
+n("<leader>c", column.ToggleHighlight, "Toggle 80 column")
 
 n("<leader>q", "", "General")
 n("<leader>qq", c("qa!"), "Force Quit")
