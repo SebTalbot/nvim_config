@@ -10,6 +10,9 @@ local options = {
 	foldenable = true,
 	foldlevel = 99,
 	foldmethod = "expr",
+	foldexpr = "nvim_treesitter#foldexpr()",
+	foldtext = "", -- default syntax highlight
+	fillchars = "fold: ",
 	ignorecase = true,
 	linebreak = true,
 	mouse = "",
@@ -33,8 +36,9 @@ for key, value in pairs(options) do
 	vim.opt[key] = value
 end
 
-vim.cmd([[ set title titlestring=vim\ %{substitute(getcwd(),\ $HOME,\ '~',\ '')} ]])
-vim.cmd([[ set foldexpr=nvim_treesitter#foldexpr() ]])
+vim.cmd(
+	[[ set title titlestring=vim\ %{substitute(getcwd(),\ $HOME,\ '~',\ '')} ]]
+)
 
 vim.cmd([[ let g:loaded_perl_provider = 0 ]])
 
