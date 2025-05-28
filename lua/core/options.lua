@@ -33,7 +33,7 @@ for key, value in pairs(options) do
 	vim.opt[key] = value
 end
 
-vim.cmd([[ set title titlestring=%{substitute(getcwd(),\ $HOME,\ '~',\ '')} ]])
+vim.cmd([[ set title titlestring=vim\ %{substitute(getcwd(),\ $HOME,\ '~',\ '')} ]])
 vim.cmd([[ set foldexpr=nvim_treesitter#foldexpr() ]])
 
 vim.cmd([[ let g:loaded_perl_provider = 0 ]])
