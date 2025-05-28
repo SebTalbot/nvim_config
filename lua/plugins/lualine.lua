@@ -1,3 +1,7 @@
+local function line_count()
+	return tostring(vim.api.nvim_buf_line_count(0))
+end
+
 return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -14,6 +18,13 @@ return {
 			},
 			lualine_x = {
 				"lsp_progress",
+			},
+			lualine_y = {
+				line_count,
+				"progress",
+			},
+			lualine_z = {
+				"location",
 			},
 		},
 	},
