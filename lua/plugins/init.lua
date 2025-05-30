@@ -44,6 +44,5 @@ require("lazy").setup({
 	require("plugins.undotree"),
 	require("plugins.which-key"),
 	require("plugins.yazi"),
-	require("plugins.lens"), --- @deprecated replace
 	"andymass/vim-matchup",
 })

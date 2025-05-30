@@ -60,6 +60,7 @@ n("<leader>bdd", c("Bclose!"), "Current")
 n("<leader>bdo", c("BufferLineCloseOthers"), "Others")
 
 -- Windows --
+local windows = require("core.window-utils")
 n("<leader>w", "", "Windows")
 n("<leader>wd", "<C-w>q", "Close")
 n("<leader>wJ", "<C-w><S-j>", "Move down")
@@ -75,7 +76,7 @@ n("<leader>wv", "<C-w>v", "Split Vertically")
 
 n("<leader>wr", "", "Resize")
 n("<leader>wre", "<C-w>=", "Equal")
-n("<leader>wrr", c("call lens#run()"), "Max Line")
+n("<leader>wrr", windows.resizeMax, "Max Line")
 n("<leader>wrj", "<cmd>resize +5<CR>", "Taller")
 n("<leader>wrk", "<cmd>resize -5<CR>", "Shorter")
 n("<leader>wrl", "<cmd>vertical resize +5<CR>", "Wider")
