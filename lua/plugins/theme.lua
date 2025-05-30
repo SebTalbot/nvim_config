@@ -14,5 +14,7 @@ return {
 
 		vim.cmd([[hi @character guifg=#D699B6]])
 		vim.cmd([[hi @string.escape guifg=#E69875]])
+
+		vim.cmd([[hi Folded guibg=#181d20 gui=italic]])
 	end,
 }
