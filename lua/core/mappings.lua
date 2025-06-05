@@ -29,6 +29,18 @@ t("<C-space>", "<C-\\><C-n>", "Normal mode")
 n("<C-u>", "<C-u>zz", "Half page up and center")
 n("<C-d>", "<C-d>zz", "Half page down and center")
 
+local function next_fold()
+	vim.cmd("normal! ]z")
+	vim.cmd("normal! zj")
+end
+n("zn", next_fold, "Next fold same level")
+
+local function previous_fold()
+	vim.cmd("normal! zk")
+	vim.cmd("normal! 9[z")
+end
+n("zp", previous_fold, "Previous fold same level")
+
 n("<leader>", "", "Custom Keys")
 n("<leader><leader>", c("WhichKey"), "Normal Keys")
 n("<leader>*", "*``", "Match word")
