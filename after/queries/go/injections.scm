@@ -18,6 +18,15 @@
     (#set! injection.language "sql")
 )
 
+(
+    [
+        (raw_string_literal_content)
+        (interpreted_string_literal_content)
+    ] @injection.content
+    (#match? @injection.content "\\s*(query|mutation|subscription|fragment)\\s+\\w+|\\{\\s*\\w+[^}]*\\}")
+    (#set! injection.language "graphql")
+)
+
 ((call_expression
   function: (selector_expression
     field: (field_identifier) @_method 
