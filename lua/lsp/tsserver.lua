@@ -26,4 +26,30 @@ return {
 		"typescriptreact",
 		"vue",
 	},
+	settings = {
+		typescript = {
+			inlayHints = {
+				parameterNames = { enabled = "literals" },
+				parameterTypes = { enabled = true },
+				variableTypes = { enabled = true },
+				propertyDeclarationTypes = { enabled = true },
+				functionLikeReturnTypes = { enabled = true },
+				enumMemberValues = { enabled = true },
+			},
+		},
+		volar = {
+			completion = {
+				autoImport = true,
+				tagCasing = "kebab",
+			},
+			diagnostics = {
+				templateString = true,
+			},
+			codeLens = {
+				references = true,
+				pugTools = true,
+				scriptSetupTools = true,
+			},
+		},
+	},
 }
