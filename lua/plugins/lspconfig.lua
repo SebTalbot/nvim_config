@@ -28,14 +28,14 @@ return {
 		lspconfig.vimls.setup({})
 		lspconfig.yamlls.setup({})
 
-		lspconfig.volar.setup({
-			init_options = {
-				vue = {
-					hybridMode = false,
-					maxOldSpaceSize = 8096,
-				},
-			},
-		})
+		-- lspconfig.volar.setup({
+		-- 	init_options = {
+		-- 		vue = {
+		-- 			hybridMode = false,
+		-- 			maxOldSpaceSize = 8096,
+		-- 		},
+		-- 	},
+		-- })
 
 		lspconfig.theme_check.setup({
 			root_dir = function(fname)
