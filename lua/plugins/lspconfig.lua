@@ -1,5 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
+	version = "2.4.0", --- @deprecated migrate configs
 	config = function()
 		local lspconfig = require("lspconfig")
 
