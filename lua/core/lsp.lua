@@ -9,6 +9,7 @@ vim.lsp.enable({
 	"lua_ls",
 	"pyright",
 	"shopify",
+	"toml_ls",
 	"ts_ls",
 })
 

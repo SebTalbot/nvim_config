@@ -23,6 +23,7 @@ return {
 			"shfmt",
 			"shopify-cli",
 			"stylua",
+			"taplo",
 			"typescript-language-server",
 			"vue-language-server",
 		}
