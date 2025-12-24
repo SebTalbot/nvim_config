@@ -5,6 +5,7 @@ vim.lsp.enable({
 	"eslint",
 	"golangci_lint_ls",
 	"gopls",
+	"json_ls",
 	"lua_ls",
 	"pyright",
 	"shopify",

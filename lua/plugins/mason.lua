@@ -1,5 +1,8 @@
 return {
 	"mason-org/mason.nvim",
+	dependencies = {
+		"b0o/schemastore.nvim",
+	},
 	opts = {},
 	config = function()
 		require("mason").setup()
@@ -13,6 +16,7 @@ return {
 			"goimports",
 			"golangci-lint-langserver",
 			"gopls",
+			"json-lsp",
 			"lua-language-server",
 			"prettier",
 			"pyright",
