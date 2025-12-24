@@ -1,5 +1,7 @@
 vim.lsp.enable({
 	"bash_ls",
+	"docker_compose_ls",
+	"docker_ls",
 	"eslint",
 	"golangci_lint_ls",
 	"gopls",

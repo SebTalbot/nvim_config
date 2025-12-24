@@ -7,6 +7,8 @@ return {
 		local ensure_installed = {
 			"bash-language-server",
 			"black",
+			"docker-compose-language-service",
+			"dockerfile-language-server",
 			"eslint-lsp",
 			"goimports",
 			"golangci-lint-langserver",
