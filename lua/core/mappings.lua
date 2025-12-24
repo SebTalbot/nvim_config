@@ -162,6 +162,7 @@ n("S-k", vim.lsp.buf.hover, "LSP Hover")
 n("<leader>l", "", "LSP")
 n("<leader>ll", Lsp.Format, "Format")
 n("<leader>lc", vim.lsp.buf.rename, "Rename")
+n("<leader>ls", c("checkhealth lsp"), "Status")
 
 n("<leader>ld", Lsp.Definitions, "Definitions")
 n("<leader>li", Lsp.Implementations, "Implementations")
