@@ -8,6 +8,7 @@ return {
 			javascript = { "prettier" },
 			typescript = { "prettier" },
 			vue = { "prettier" },
+			python = { "black" },
 		},
 	},
 }

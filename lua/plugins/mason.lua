@@ -5,12 +5,14 @@ return {
 		require("mason").setup()
 
 		local ensure_installed = {
+			"black",
 			"eslint-lsp",
 			"goimports",
 			"golangci-lint-langserver",
 			"gopls",
 			"lua-language-server",
 			"prettier",
+			"pyright",
 			"shopify-cli",
 			"stylua",
 			"typescript-language-server",
