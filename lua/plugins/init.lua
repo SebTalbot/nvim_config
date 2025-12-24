@@ -26,14 +26,12 @@ require("lazy").setup({
 	require("plugins.bufferline"),
 	require("plugins.cmp"),
 	require("plugins.colorizer"),
+	require("plugins.conform"),
 	require("plugins.gitsigns"),
 	require("plugins.indent-blankline"),
 	require("plugins.lazygit"),
-	require("plugins.lspconfig"), --- @deprecated move to native
 	require("plugins.lualine"),
 	require("plugins.mason"),
-	require("plugins.mason-lspconfig"),
-	require("plugins.null-ls"), --- @deprecated move to native
 	require("plugins.surround"),
 	require("plugins.tabnine"),
 	require("plugins.telescope"),

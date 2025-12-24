@@ -12,6 +12,7 @@ local options = {
 	foldmethod = "expr",
 	foldexpr = "v:lua.vim.treesitter.foldexpr()",
 	foldtext = "",
+	formatexpr = "v:lua.require'conform'.formatexpr()",
 	fillchars = "fold: ",
 	ignorecase = true,
 	linebreak = true,
