@@ -5,6 +5,7 @@ return {
 		require("mason").setup()
 
 		local ensure_installed = {
+			"bash-language-server",
 			"black",
 			"eslint-lsp",
 			"goimports",
@@ -13,6 +14,7 @@ return {
 			"lua-language-server",
 			"prettier",
 			"pyright",
+			"shfmt",
 			"shopify-cli",
 			"stylua",
 			"typescript-language-server",

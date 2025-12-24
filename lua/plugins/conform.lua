@@ -9,6 +9,8 @@ return {
 			typescript = { "prettier" },
 			vue = { "prettier" },
 			python = { "black" },
+			sh = { "shfmt" },
+			zsh = { "shfmt" },
 		},
 	},
 }

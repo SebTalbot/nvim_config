@@ -1,4 +1,5 @@
 vim.lsp.enable({
+	"bash_ls",
 	"eslint",
 	"golangci_lint_ls",
 	"gopls",
