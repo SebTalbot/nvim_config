@@ -5,6 +5,9 @@ return {
 		require("mason").setup()
 
 		local ensure_installed = {
+			"goimports",
+			"golangci-lint-langserver",
+			"gopls",
 			"lua-language-server",
 			"stylua",
 		}

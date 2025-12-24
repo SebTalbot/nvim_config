@@ -4,6 +4,7 @@ return {
 		-- :help conform-formatters
 		formatters_by_ft = {
 			lua = { "stylua" },
+			go = { "goimports" },
 		},
 	},
 }
