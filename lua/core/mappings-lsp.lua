@@ -40,4 +40,13 @@ M.TypeDefinitions = function()
 	})
 end
 
+M.Format = function()
+	local installed, conform = pcall(require, "conform")
+	if installed then
+		conform.format({ lsp_fallback = true })
+	else
+		vim.lsp.buf.format()
+	end
+end
+
 return M

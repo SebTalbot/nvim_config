@@ -160,7 +160,7 @@ n("<leader>gaS", c("Gitsigns stage_buffer"), "Buffer Stage")
 local Lsp = require("core.mappings-lsp")
 n("S-k", vim.lsp.buf.hover, "LSP Hover")
 n("<leader>l", "", "LSP")
-n("<leader>ll", vim.lsp.buf.format, "Format")
+n("<leader>ll", Lsp.Format, "Format")
 n("<leader>lc", vim.lsp.buf.rename, "Rename")
 
 n("<leader>ld", Lsp.Definitions, "Definitions")
