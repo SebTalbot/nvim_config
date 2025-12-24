@@ -47,6 +47,24 @@ return {
 					hidden = true,
 					no_ignore = true,
 				},
+				git_bcommits = {
+					git_command = {
+						"git",
+						"log",
+						"--pretty=%h %<(20,trunc)%an %ad %s",
+						"--date=format:%Y-%m-%d %H:%M:%S",
+					},
+				},
+				git_commits = {
+					git_command = {
+						"git",
+						"log",
+						"--pretty=%h %<(20,trunc)%an %ad %s",
+						"--date=format:%Y-%m-%d %H:%M:%S",
+						"--",
+						".",
+					},
+				},
 				grep_string = {
 					prompt_title = "Fuzzy (All)",
 					disable_coordinates = true,
