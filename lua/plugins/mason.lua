@@ -5,6 +5,8 @@ return {
 		require("mason").setup()
 
 		local ensure_installed = {
+			"lua-language-server",
+			"stylua",
 		}
 
 		local registry = require("mason-registry")

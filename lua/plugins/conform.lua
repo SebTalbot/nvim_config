@@ -3,6 +3,7 @@ return {
 	opts = {
 		-- :help conform-formatters
 		formatters_by_ft = {
+			lua = { "stylua" },
 		},
 	},
 }
