@@ -3,6 +3,7 @@ vim.lsp.enable({
 	"golangci_lint_ls",
 	"gopls",
 	"lua_ls",
+	"shopify",
 	"ts_ls",
 })
 

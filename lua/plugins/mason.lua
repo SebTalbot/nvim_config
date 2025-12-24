@@ -11,6 +11,7 @@ return {
 			"gopls",
 			"lua-language-server",
 			"prettier",
+			"shopify-cli",
 			"stylua",
 			"typescript-language-server",
 			"vue-language-server",
