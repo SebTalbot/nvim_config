@@ -11,6 +11,7 @@ vim.lsp.enable({
 	"shopify",
 	"toml_ls",
 	"ts_ls",
+	"yaml_ls",
 })
 
 vim.diagnostic.config({

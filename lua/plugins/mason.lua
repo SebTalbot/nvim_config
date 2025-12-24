@@ -26,6 +26,7 @@ return {
 			"taplo",
 			"typescript-language-server",
 			"vue-language-server",
+			"yaml-language-server",
 		}
 
 		local registry = require("mason-registry")
