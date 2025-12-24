@@ -5,11 +5,15 @@ return {
 		require("mason").setup()
 
 		local ensure_installed = {
+			"eslint-lsp",
 			"goimports",
 			"golangci-lint-langserver",
 			"gopls",
 			"lua-language-server",
+			"prettier",
 			"stylua",
+			"typescript-language-server",
+			"vue-language-server",
 		}
 
 		local registry = require("mason-registry")

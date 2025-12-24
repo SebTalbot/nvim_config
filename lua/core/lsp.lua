@@ -1,7 +1,9 @@
 vim.lsp.enable({
+	"eslint",
 	"golangci_lint_ls",
 	"gopls",
 	"lua_ls",
+	"ts_ls",
 })
 
 vim.diagnostic.config({
