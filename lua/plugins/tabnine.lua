@@ -16,5 +16,7 @@ return {
 			log_file_path = nil,
 			ignore_certificate_errors = false,
 		})
+
+		vim.cmd("TabnineDisable")
 	end,
 }
