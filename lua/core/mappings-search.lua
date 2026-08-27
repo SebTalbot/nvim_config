@@ -18,6 +18,9 @@ M.Files = function()
 			"%.tests%.", -- node
 			"_test.go$", -- go
 
+			-- Docs
+			"docs%/",
+
 			-- Non-text Files
 			".jpg$",
 			".jpeg$",
@@ -52,6 +55,9 @@ M.GrepString = function()
 			"!*.test.*", -- node
 			"!*.tests.*", -- node
 			"!*_test.go", -- go
+
+			-- Docs
+			"!docs/**",
 		},
 	})
 end
@@ -79,6 +85,9 @@ M.LiveGrep = function()
 			"!*.test.*", -- node
 			"!*.tests.*", -- node
 			"!*_test.go", -- go
+
+			-- Docs
+			"!docs/**",
 		},
 	})
 end

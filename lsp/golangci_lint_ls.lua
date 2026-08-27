@@ -15,7 +15,7 @@ return {
 		command = {
 			"golangci-lint",
 			"run",
-			"--output.json.path=stdout",
+			"--output.json.path", "stdout",
 			"--show-stats=false",
 		},
 	},
