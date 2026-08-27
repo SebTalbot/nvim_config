@@ -176,28 +176,46 @@ n("<leader>lar", c("Telescope lsp_references"), "References")
 n("<leader>lat", c("Telescope lsp_type_definitions"), "Type Definitions")
 
 -- Diagnostic
+--- Mirrors the `float` option of |vim.diagnostic.jump()|, deprecated in Nvim
+--- 0.12 and removed in 0.14. Passed as its `on_jump` callback instead.
+--- @param _ vim.Diagnostic?
+--- @param bufnr integer
+local function diagnostic_float(_, bufnr)
+	vim.diagnostic.open_float({
+		bufnr = bufnr,
+		scope = "cursor",
+		focus = false,
+	})
+end
+
 n("<leader>e", "", "Diagnostic")
 n("<leader>ee", vim.diagnostic.open_float, "Details")
 n(
 	"<leader>ep",
-	f(vim.diagnostic.jump, { count = -1, float = true }),
+	f(vim.diagnostic.jump, { count = -1, on_jump = diagnostic_float }),
 	"Previous"
 )
 n(
 	"<leader>eP",
-	f(
-		vim.diagnostic.jump,
-		{ count = -1, float = true, severity = vim.diagnostic.severity.ERROR }
-	),
+	f(vim.diagnostic.jump, {
+		count = -1,
+		on_jump = diagnostic_float,
+		severity = vim.diagnostic.severity.ERROR,
+	}),
 	"Previous Error"
 )
-n("<leader>en", f(vim.diagnostic.jump, { count = 1, float = true }), "Next")
+n(
+	"<leader>en",
+	f(vim.diagnostic.jump, { count = 1, on_jump = diagnostic_float }),
+	"Next"
+)
 n(
 	"<leader>eN",
-	f(
-		vim.diagnostic.jump,
-		{ count = 1, float = true, severity = vim.diagnostic.severity.ERROR }
-	),
+	f(vim.diagnostic.jump, {
+		count = 1,
+		on_jump = diagnostic_float,
+		severity = vim.diagnostic.severity.ERROR,
+	}),
 	"Next Error"
 )
 n("<leader>el", vim.diagnostic.setloclist, "Fix list")

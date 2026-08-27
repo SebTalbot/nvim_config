@@ -17,7 +17,7 @@ return {
 				},
 			},
 			lualine_x = {
-				"lsp_progress",
+				"lsp_status",
 			},
 			lualine_y = {
 				line_count,
