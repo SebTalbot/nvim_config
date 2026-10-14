@@ -28,7 +28,6 @@ vim.diagnostic.config({
 	underline = true,
 	severity_sort = true,
 	float = {
-		focusable = false,
 		style = "minimal",
 		border = "rounded",
 		source = true,
