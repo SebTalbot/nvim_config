@@ -10,6 +10,8 @@ return {
 		local ensure_installed = {
 			"bash-language-server",
 			"black",
+			"clang-format",
+			"clangd",
 			"docker-compose-language-service",
 			"dockerfile-language-server",
 			"eslint-lsp",
